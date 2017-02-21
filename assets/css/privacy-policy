@@ -1,0 +1,38 @@
+<h1>PRIVACY STATEMENT</h1>
+
+<h2>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h2>
+
+Personify does nothing with the sensitive information regarding your contacts or messages other than what is intended by the application. Your messages are guarenteed secure and only visible by you and the people you send them too. We do not have any contact with any third-parties, nor do we have access to the internet in order to upload any of your data.
+
+
+<h2>SECTION 2 - PRIVILEGES</h2>
+
+<b>What privileges does Personify require?</b>
+
+- Read contacts
+- Send SMS
+- Read/Write storage
+
+<b>What does Personify need these permissions for?</b>
+
+- Read contacts: This should be a fairly self explanatory one, but we need access to your contacts to load this information for you. We load contact data for both letting you select the contacts you want to message, and for accessing custom or native Android groups.
+
+- Send SMS: We need the ability to send your messages after you are ready to send out a mass, personalized message. We do not send messages without the explicit consent from the user.
+
+- Read/Write storage: This particular permission is needed only when you are adding custom photos to a custom contact group made through Personify. The read permission is needed to read photos from storage, and write is needed to save photos if you are capturing the image yourself. The only place this is used is through the custom group feature, and no where else.
+
+
+<p>How do I withdraw my consent?</p>
+
+You can opt-out of any of the permissions through Settings -> Applications -> Personify and the permissions tab. Although the user experience of the app relies heavily on the first two permissions, you may revoke access to these permissions at any time.
+
+
+<h2>SECTION 3 - THIRD-PARTY SERVICES</h2>
+
+We do not integrate with any third-party services, nor pass along any data to any third party service. There is no ability for Personify to accesss the internet connection so you are safe to assume there's no way for Personify to upload any contact or SMS data to anyone.
+
+
+<h2>QUESTIONS AND CONTACT INFORMATION</h2>
+
+If you would like to contact the developer for any information regarding privacy policy information or anything regarding the Personify application, email us at:
+Thorrism@gmail.com

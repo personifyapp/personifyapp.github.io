@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Personify: Mobile Engagement</title>
+  <meta name="description" content="Personify is an application that gives users the ability to tailor personalized text messages to anyone in their address book without the annoyance of group texts.">
+  <meta name="keywords" content="mobile,application,android,texting,app,personify,mass,lucas">
+  <meta name="author" content="Lucas Crawford">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>       <!-- bootstrap -->
+  <link rel='stylesheet' href='assets/css/vendor.css'>              <!-- plugin -->
+  <link rel='stylesheet' href='assets/css/theme_dark_pink2.css'>   <!-- main style -->
+  <link rel='stylesheet' href='assets/css/custom.css'>              <!-- custom style -->
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!--[if lte IE 9]><!-->
+  <script src='assets/js/vendor/html5shiv.min.js'></script>
+  <!--<![endif]-->
+</head>
+
+<!-- to edit the animation, please read documentation <animation> section -->
+
+<body>
+
+  <!-- site loader -->
+  <div class="site-loader">
+    <span></span>
+    <p>PERSONIFY</p> <!-- site loader text -->
+  </div>
+  <!-- site loader -->
+
+  <!-- site bg -->
+  <div class="site-bg">
+    <div class="site-bg__img"></div>
+    <div class="site-bg__video"></div>
+    <div class="site-bg__overlay"></div>
+    <div class="site-bg__effect"></div>
+    <canvas class="site-bg__canvas"></canvas>
+  </div>
+  <!-- /site bg -->
+
+  <!-- site nav -->
+  <nav class="site-nav">
+    <div class="site-nav__table">
+      <div class="site-nav__cell">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="site-nav__inner">
+                <!-- menu -->
+                <ul class="site-nav__menu">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#privacy_policy">Privacy Policy</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- /menu -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <!-- /site nav -->
+
+  <!-- site wrap -->
+  <div class="site-wrap">
+    <!-- site header -->
+    <header class="site-header">
+      <div class="container">
+        <!-- site header logo -->
+        <div class="site-header__logo">
+          <a href="#">
+            <img src="assets/img/icon.png" alt="logo">
+          </a>
+        </div>
+        <!-- site header logo -->
+
+        <!-- site header icon -->
+        <ul class="site-header__icon">
+          <!-- audio icon -->
+          <li class="site-header__icon__audio">
+            <a href="#">
+              <i class="audio-bar">
+                <span class="audio-bar__item"></span>
+                <span class="audio-bar__item"></span>
+                <span class="audio-bar__item"></span>
+                <span class="audio-bar__item"></span>
+              </i>
+            </a>
+          </li>
+          <!-- /audio icon -->
+
+          <!-- menu icon -->
+          <li class="site-header__icon__nav">
+            <a href="#">
+              <i class="ion-android-menu"></i>
+            </a>
+          </li>
+          <!-- /menu icon -->
+        </ul>
+        <!-- /site header icon -->
+      </div>
+    </header>
+    <!-- /site header -->
+
+    <!-- site main -->
+    <main class="site-main">
+      <!-- home -->
+      <div id="home" class="section is-active">
+        <div class="section__table">
+          <div class="section__cell">
+            <div class="container-fluid max-width">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInUp2"
+                    data-animation-in-delay="300"
+                    data-animation-out="fadeOutDown2"
+                    data-animation-out-delay="700">
+                      <h1 class="section__title">
+                        Person<span class="color">ify</span>
+                      </h1>
+                      <p class="section__caption">A more effective way to communicate</p>
+                      <a href="https://play.google.com/store/apps/details?id=com.personifyapp">
+                        <img alt="Get it on Google Play"
+                           src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+                      </a>
+                    </div>
+                  </div>
+              
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInUp2"
+                    data-animation-in-delay="1100"
+                    data-animation-out="fadeOutDown2"
+                    data-animation-out-delay="100">
+                      <div class="btn-wrap">
+                       <!--  <a class="btn btn-theme _icon _circle" href="#newsletter">
+                          <i class="ion-android-mail"></i>
+                          Newsletter
+                        </a> -->
+                        <a class="btn btn-theme _icon _circle" href="#about" data-link="section"> <!-- link to section, edit the [href] and add [data-link="section"] -->
+                          <i class="ion-information-circled"></i>
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /home -->
+
+      <!-- about -->
+      <div id="about" class="section">
+        <div class="section__table">
+          <div class="section__cell">
+            <div class="container">
+              <!-- section heading -->
+              <div class="section__heading row">
+                <div class="col-xs-12 col-md-5">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInUp2"
+                    data-animation-in-delay="300"
+                    data-animation-out="fadeOutDown2"
+                    data-animation-out-delay="600">
+                      <h2 class="section__title">
+                       About <span class="color">us</span>
+                      </h2>
+                      <div class="hr"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-offset-1">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInUp2"
+                      data-animation-in-delay="300"
+                      data-animation-out="fadeOutDown2"
+                      data-animation-out-delay="400">
+                      <p class="section__caption">
+                        Personify allows users to send a bundle of personalized text messages simultaneously, creating a more effective way of communicating while saving you time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section heading -->
+
+              <!-- section content -->
+              <div class="section__content row">
+                <div class="col-xs-12 col-md-5">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInLeft"
+                      data-animation-in-delay="900"
+                      data-animation-out="fadeOutLeft"
+                      data-animation-out-delay="100">
+                      <div class="about__item">
+                        <i class="ion-android-warning"></i>
+                        <h3>The problem</h3>
+                        <p>Sending the same text message on a large scale is cumbersome, slow, and generic.</p>
+                      </div>
+                      <div class="about__item">
+                        <i class="ion-android-bulb"></i>
+                        <h3>The solution</h3>
+                        <p>An app that offers a seamless, simple, and slick interface to deliver personalized text messages to a vast audience.</p>
+                      </div>
+                      <div class="about__item">
+                        <i class="ion-person-stalker"></i>
+                        <h3>Founders</h3>
+                        <p>Lucas and Anders met in University of Oregon's computer science department and have been building products since 2015.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-offset-1">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInRight"
+                      data-animation-in-delay="900"
+                      data-animation-out="fadeOutRight"
+                      data-animation-out-delay="100">
+                      <p>Personify stemmed from wasting precious time over the holidays to send out personalized text messages to friends and loved ones. Personify fixes this problem through our slick and simple application interface. Keeping Google's Material Design in mind, we wanted to create a product that gives users the easiest platform to deliver their message powerfully.</p>
+                      <a class="btn btn-theme _icon _circle" href="#contact" data-link="section">
+                        <i class="ion-android-mail"></i>
+                        Contact us
+                      </a>
+                      <a href="https://play.google.com/store/apps/details?id=com.personifyapp">
+                        <img alt="Get it on Google Play" id="gp_download_icon"
+                           src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section content -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /about -->
+
+      <!-- Privacy policy -->
+      <div id="privacy_policy" class="section">
+        <div class="section__table">
+          <div class="section__cell">
+            <div class="container">
+              <!-- section heading -->
+              <div class="section__heading row">
+                <div class="col-xs-12 col-md-5">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInUp2"
+                    data-animation-in-delay="300"
+                    data-animation-out="fadeOutDown2"
+                    data-animation-out-delay="600">
+                      <h2 class="section__title">
+                       Privacy Policy
+                      </h2>
+                      <div class="hr"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section heading -->
+
+              <!-- section content -->
+              <div class="section__content row">
+                <div class="col-xs-12 col-md-8">
+                  <div class="overflow-hidden">
+                    <div id="privacy_content" class="animation-item"
+                      data-animation-in="fadeInLeft"
+                      data-animation-in-delay="900"
+                      data-animation-out="fadeOutLeft"
+                      data-animation-out-delay="100">
+
+                      <h3>SECTION 1 - USER INFORMATION</h3>
+
+                      <p>
+                          Personify does nothing with the sensitive information regarding your contacts or messages other than what is intended by the application. Your messages are guarenteed secure and only visible by you and the people you send them too. We do not have any contact with any third-parties, nor do we have access to the internet in order to upload any of your data.
+                      </p>    
+
+                      <h3>SECTION 2 - PRIVILEGES</h3>
+
+                      <b>What privileges does Personify require?</b>
+                      <ul>
+                        <li>Read contacts</li>
+                        <li>Send SMS</li>
+                        <li>Read/Write storage</li>
+                      </ul>
+
+                      <b>What does Personify need these permissions for?</b>
+                      <ul>
+                        <li>Read contacts: This should be a fairly self explanatory one, but we need access to your contacts to load this information for you. We load contact data for both letting you select the contacts you want to message, and for accessing custom or native Android groups.</li>
+                        <li>Send SMS: We need the ability to send your messages after you are ready to send out a mass, personalized message. We do not send messages without the explicit consent from the user.</li>
+                        <li>Read/Write storage: This particular permission is needed only when you are adding custom photos to a custom contact group made through Personify. The read permission is needed to read photos from storage, and write is needed to save photos if you are capturing the image yourself. The only place this is used is through the custom group feature, and no where else.</li>
+                      </ul>
+
+                      <b>How do I withdraw my consent?</b>
+                      <p>
+                        You can opt-out of any of the permissions through Settings -> Applications -> Personify and the permissions tab. Although the user experience of the app relies heavily on the first two permissions, you may revoke access to these permissions at any time.
+                      </p>
+
+                      <h3>SECTION 3 - THIRD-PARTY SERVICES</h3>
+                      <p>
+                      We do not integrate with any third-party services, nor pass along any data to any third party service. There is no ability for Personify to accesss the internet connection so you are safe to assume there's no way for Personify to upload any contact or SMS data to anyone.
+                      </p>
+
+                      <h3>QUESTIONS AND CONTACT INFORMATION</h3>
+                      <p>
+                      If you would like to contact the developer for any information regarding privacy policy information or anything regarding the Personify application, <a href="#contact" data-link="section">contact us</a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section content -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Privacy policy -->
+
+
+      <!-- contact -->
+      <div id="contact" class="section">
+        <div class="section__table">
+          <div class="section__cell">
+            <div class="container">
+              <!-- section heading -->
+              <div class="section__heading row">
+                <div class="col-xs-12 col-sm-5">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInUp2"
+                      data-animation-in-delay="300"
+                      data-animation-out="fadeOutDown2"
+                      data-animation-out-delay="600">
+                      <h2 class="section__title">
+                       Get <span class="color">in</span> touch
+                      </h2>
+                      <div class="hr"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInUp2"
+                      data-animation-in-delay="300"
+                      data-animation-out="fadeOutDown2"
+                      data-animation-out-delay="400">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section heading -->
+
+              <!-- section content -->
+              <div class="section__content row">
+                <div class="col-xs-12 col-sm-5 col-md-4">
+                  <!-- contact info -->
+                  <div class="contact-info overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInLeft"
+                    data-animation-in-delay="700"
+                    data-animation-out="fadeOutLeft"
+                    data-animation-out-delay="100">
+                      <div class="contact-info__item">
+                        <i class="ion-paper-airplane"></i>
+                        <h3>Email address</h3>
+                        <p>thorrism@gmail.com</p>
+                      </div>
+                      <div class="contact-info__item">
+                        <i class="ion-map"></i>
+                        <h3>Location</h3>
+                          <p>
+                            Eugene, Oregon
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /contact info -->
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-offset-2">
+                  <!-- contact form -->
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInRight"
+                    data-animation-in-delay="700"
+                    data-animation-out="fadeOutRight"
+                    data-animation-out-delay="100">
+                      <form class="form-theme" role="form" action="http://formspree.io/thorrism@gmail.com" method="POST" novalidate="novalidate">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group required">
+                              <label class="form-label" for="contactName">Name</label>
+                              <input type="text" class="form-control" id="contactName" type="text" name="name">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group required">
+                              <label class="form-label" for="contactEmail">Email</label>
+                              <input type="email" class="form-control" id="contactEmail" type="text" name="email">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group required">
+                          <label class="form-label" for="contactMessage">Message</label>
+                          <textarea class="form-control" id="contactMessage" rows="4" name="message"></textarea>
+                        </div>
+                        <input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-theme _circle _icon">
+                        <div class="form-notify"></div>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- contact form -->
+                </div>
+              </div>
+              <!-- /section content -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /portfolio-->
+    </main>
+    <!-- /site main -->
+
+    <!-- site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="site-footer__inner">
+              <!-- copyright -->
+              <p class="site-footer__copyright">
+                2016 @ <a href="#" target="_blank">PERSONIFY</a> | All rights Reserved.
+              </p>
+              <!-- /copyright -->
+              <!-- social -->
+              <!-- <ul class="site-footer__social">
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+              </ul> -->
+              <!-- /social -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /site footer -->
+  </div>
+  <!-- /site wrap -->
+
+  <!-- script -->
+  <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+  <script src='assets/js/vendor/bootstrap.min.js'></script>
+  <script src='assets/js/vendor/plugin.js'></script>
+  <script src='assets/js/variable.js'></script>
+  <script src='assets/js/main.js'></script>
+  <!-- /script -->
+
+</body>
+</html>

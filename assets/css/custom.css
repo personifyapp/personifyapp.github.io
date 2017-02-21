@@ -1,0 +1,21 @@
+/**
+ * custom
+ * place custom style in this file
+ * add !important to the end if no effect
+ * e.g. color: #fff !important;
+ * --------------------------------------------------
+ *
+ */
+
+#gp_download_icon {
+  padding-top: 24px;
+  padding-left: 16px;
+ }
+
+.section__caption{
+	padding-top: 16px;
+}
+
+.about__item, #privacy_content {
+	padding-bottom: 16px;
+}
